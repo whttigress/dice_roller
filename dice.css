@@ -1,0 +1,143 @@
+﻿@keyframes bounceIn {
+    0% {
+
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    60% {
+
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: scale(1);
+    }
+}
+
+body {
+    background: #444;
+    color: #fff;
+    font-family: sans-serif;
+}
+button {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid #333333;
+    padding: 5px;
+}
+
+td {
+    border-bottom: 1px solid #333333;
+    padding: 4px;
+}
+td:nth-child(2) {
+    background-color: #333;
+    font-weight: bold;
+}
+tr:hover td {
+    background: #666;
+}
+tr:hover td:nth-child(2) {
+    background: #555;
+}
+tr:hover td:first-child, tr:hover th:first-child {
+        font-weight: bold;
+        color:cadetblue;
+        text-decoration: underline;
+    }
+
+#error {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #fd1a1a;
+}
+#hideDice {
+    position:fixed;
+    right:0px;
+    top:0px;
+    display:none;
+}
+#diceselect{
+    width: 30px;
+    margin:10px;
+}
+#buttonroll {
+}
+#dice {
+    background:#444;
+    display:inline;
+    position:fixed;
+    right:0px;
+    top:20px;
+    margin:10px;
+    max-width:70%;
+}
+#histbl {
+}
+#history {
+    display: none;
+}
+#history tbody{
+}
+#roll {
+    max-width: 25%;
+    margin: 30px;
+}
+#total {
+    display:inline-block;
+    margin-left: 10px;
+}
+.total {
+    font-weight: bold;
+}
+#stats {
+    margin-top:10px;
+}
+#stats .die {
+    height:22px;
+    width:22px;
+    font-size: 7px;
+    letter-spacing: 3.5px;
+    color:#666;
+    margin:7px;
+    animation:none;
+}
+#stats .die div {
+    padding-left: 2px;
+}
+.die {
+    background: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    animation: bounceIn 1s;
+    color:black;
+    font-family:sans-serif;
+    font-weight:bold;
+    letter-spacing:8px;
+    font-size:14px;
+}
+.die div {
+    padding-left:7px;
+}
+.number {
+    padding-top:10px;
+    font-size:26px;
+    display: block;
+    color: black;
+    font-family: serif;
+}
